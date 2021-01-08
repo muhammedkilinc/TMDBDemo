@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,11 @@
 		A4102A2E25A8FDD7002113D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4102A2C25A8FDD7002113D7 /* Main.storyboard */; };
 		A4102A3025A8FDD9002113D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4102A2F25A8FDD9002113D7 /* Assets.xcassets */; };
 		A4102A3325A8FDD9002113D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4102A3125A8FDD9002113D7 /* LaunchScreen.storyboard */; };
+		A4102A3E25A8FE76002113D7 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = A4102A3D25A8FE76002113D7 /* RxRelay */; };
+		A4102A4025A8FE76002113D7 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A4102A3F25A8FE76002113D7 /* RxSwift */; };
+		A4102A4225A8FE76002113D7 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = A4102A4125A8FE76002113D7 /* RxCocoa */; };
+		A4102A4625A8FE9E002113D7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A4102A4525A8FE9E002113D7 /* Alamofire */; };
+		A4102A4A25A8FF7A002113D7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A4102A4925A8FF7A002113D7 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +36,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4102A4225A8FE76002113D7 /* RxCocoa in Frameworks */,
+				A4102A4625A8FE9E002113D7 /* Alamofire in Frameworks */,
+				A4102A4025A8FE76002113D7 /* RxSwift in Frameworks */,
+				A4102A3E25A8FE76002113D7 /* RxRelay in Frameworks */,
+				A4102A4A25A8FF7A002113D7 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +66,7 @@
 		A4102A2525A8FDD7002113D7 /* TMDBDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A4102A3B25A8FDF9002113D7 /* Network */,
 				A4102A2625A8FDD7002113D7 /* AppDelegate.swift */,
 				A4102A2825A8FDD7002113D7 /* SceneDelegate.swift */,
 				A4102A2A25A8FDD7002113D7 /* ViewController.swift */,
@@ -65,6 +76,13 @@
 				A4102A3425A8FDD9002113D7 /* Info.plist */,
 			);
 			path = TMDBDemo;
+			sourceTree = "<group>";
+		};
+		A4102A3B25A8FDF9002113D7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +101,13 @@
 			dependencies = (
 			);
 			name = TMDBDemo;
+			packageProductDependencies = (
+				A4102A3D25A8FE76002113D7 /* RxRelay */,
+				A4102A3F25A8FE76002113D7 /* RxSwift */,
+				A4102A4125A8FE76002113D7 /* RxCocoa */,
+				A4102A4525A8FE9E002113D7 /* Alamofire */,
+				A4102A4925A8FF7A002113D7 /* Kingfisher */,
+			);
 			productName = TMDBDemo;
 			productReference = A4102A2325A8FDD7002113D7 /* TMDBDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +135,11 @@
 				Base,
 			);
 			mainGroup = A4102A1A25A8FDD7002113D7;
+			packageReferences = (
+				A4102A3C25A8FE76002113D7 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				A4102A4425A8FE9E002113D7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				A4102A4825A8FF7A002113D7 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = A4102A2425A8FDD7002113D7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +371,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A4102A3C25A8FE76002113D7 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		A4102A4425A8FE9E002113D7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+		A4102A4825A8FF7A002113D7 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A4102A3D25A8FE76002113D7 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4102A3C25A8FE76002113D7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		A4102A3F25A8FE76002113D7 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4102A3C25A8FE76002113D7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		A4102A4125A8FE76002113D7 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4102A3C25A8FE76002113D7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		A4102A4525A8FE9E002113D7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4102A4425A8FE9E002113D7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		A4102A4925A8FF7A002113D7 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4102A4825A8FF7A002113D7 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A4102A1B25A8FDD7002113D7 /* Project object */;
 }
