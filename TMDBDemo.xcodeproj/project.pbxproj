@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A4102A2725A8FDD7002113D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4102A2625A8FDD7002113D7 /* AppDelegate.swift */; };
-		A4102A2925A8FDD7002113D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4102A2825A8FDD7002113D7 /* SceneDelegate.swift */; };
 		A4102A3025A8FDD9002113D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4102A2F25A8FDD9002113D7 /* Assets.xcassets */; };
 		A4102A3325A8FDD9002113D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4102A3125A8FDD9002113D7 /* LaunchScreen.storyboard */; };
 		A4102A3E25A8FE76002113D7 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = A4102A3D25A8FE76002113D7 /* RxRelay */; };
@@ -21,7 +20,6 @@
 /* Begin PBXFileReference section */
 		A4102A2325A8FDD7002113D7 /* TMDBDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMDBDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4102A2625A8FDD7002113D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A4102A2825A8FDD7002113D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A4102A2F25A8FDD9002113D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4102A3225A8FDD9002113D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4102A3425A8FDD9002113D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,7 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				A4102A2625A8FDD7002113D7 /* AppDelegate.swift */,
-				A4102A2825A8FDD7002113D7 /* SceneDelegate.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -177,7 +174,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4102A2725A8FDD7002113D7 /* AppDelegate.swift in Sources */,
-				A4102A2925A8FDD7002113D7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
