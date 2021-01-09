@@ -9,10 +9,6 @@ import UIKit
 import Alamofire
 import RxSwift
 
-struct HTTPBinResponse: Decodable {
-  let page: Int
-}
-
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -21,17 +17,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
 //
-    let source: Observable<HTTPBinResponse> = AF.request(Router.search(SearchMultiRequestEntity(query: "John", page: 1)).asURLRequest())
-      .validate()
-      .seralize()
-  
-
+//    let source: Observable<ListResult> = AF.request(Router.search(SearchMultiRequestEntity(query: "John", page: 1)).asURLRequest())
+//      .validate()
+//      .seralize()
+//
+//
+//    disposable = source
+//      .subscribe { (response) in
+//      debugPrint(response)
+//    }
+    
+    let source: Observable<ListResponse<[List]>> = EndpointImp().searchMulti(payload: SearchMultiRequestEntity(query: "John", page: 1))
+    
     disposable = source
       .subscribe { (response) in
-      debugPrint(response)
-    }
-
+        debugPrint(response)
+      }
     
+    //input'u relaye at
+    //relayi outputla paylaş
+    //output data relay
+    //Output data relay tableview datasource'a bind et.
+    //
+
     return true
   }
 

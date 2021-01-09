@@ -8,13 +8,13 @@
 import Foundation
 import Alamofire
 
-enum Router: Endpoint {
+enum EndpointRequestable: Requestable {
   
   case search(SearchMultiRequestEntity)
   
 }
 
-extension Router {
+extension EndpointRequestable {
   var method: HTTPMethod {
     switch self {
     case .search: return .get
