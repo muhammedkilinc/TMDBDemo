@@ -15,6 +15,13 @@
 		A4102A4225A8FE76002113D7 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = A4102A4125A8FE76002113D7 /* RxCocoa */; };
 		A4102A4625A8FE9E002113D7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A4102A4525A8FE9E002113D7 /* Alamofire */; };
 		A4102A4A25A8FF7A002113D7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A4102A4925A8FF7A002113D7 /* Kingfisher */; };
+		A4102A5925A90669002113D7 /* DataRequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4102A5825A90669002113D7 /* DataRequestExtension.swift */; };
+		A4102A5D25A90B44002113D7 /* ResponseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4102A5C25A90B44002113D7 /* ResponseExtension.swift */; };
+		A4102A6025A90B65002113D7 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4102A5F25A90B65002113D7 /* StringExtension.swift */; };
+		A4102A6325A90E80002113D7 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4102A6225A90E80002113D7 /* Endpoint.swift */; };
+		A4102A6A25A99D8A002113D7 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4102A6925A99D8A002113D7 /* Router.swift */; };
+		A4102A7125A99DF2002113D7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4102A7025A99DF2002113D7 /* Constants.swift */; };
+		A4102A7625A9B1D7002113D7 /* SearchMultiRequestEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4102A7525A9B1D7002113D7 /* SearchMultiRequestEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +30,13 @@
 		A4102A2F25A8FDD9002113D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4102A3225A8FDD9002113D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4102A3425A8FDD9002113D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4102A5825A90669002113D7 /* DataRequestExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequestExtension.swift; sourceTree = "<group>"; };
+		A4102A5C25A90B44002113D7 /* ResponseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseExtension.swift; sourceTree = "<group>"; };
+		A4102A5F25A90B65002113D7 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		A4102A6225A90E80002113D7 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		A4102A6925A99D8A002113D7 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A4102A7025A99DF2002113D7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A4102A7525A9B1D7002113D7 /* SearchMultiRequestEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMultiRequestEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +74,10 @@
 		A4102A2525A8FDD7002113D7 /* TMDBDemo */ = {
 			isa = PBXGroup;
 			children = (
-				A4102A4D25A8FFD4002113D7 /* App */,
+				A4102A7025A99DF2002113D7 /* Constants.swift */,
+				A4102A6E25A99DA2002113D7 /* Extension */,
 				A4102A3B25A8FDF9002113D7 /* Network */,
+				A4102A4D25A8FFD4002113D7 /* App */,
 				A4102A4F25A8FFDF002113D7 /* Storyboard */,
 				A4102A2F25A8FDD9002113D7 /* Assets.xcassets */,
 				A4102A3425A8FDD9002113D7 /* Info.plist */,
@@ -72,6 +88,9 @@
 		A4102A3B25A8FDF9002113D7 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				A4102A7825A9B1DA002113D7 /* Request */,
+				A4102A6C25A99D97002113D7 /* Endpoint */,
+				A4102A6925A99D8A002113D7 /* Router.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -90,6 +109,40 @@
 				A4102A3125A8FDD9002113D7 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		A4102A6C25A99D97002113D7 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				A4102A6225A90E80002113D7 /* Endpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		A4102A6E25A99DA2002113D7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A4102A5825A90669002113D7 /* DataRequestExtension.swift */,
+				A4102A5C25A90B44002113D7 /* ResponseExtension.swift */,
+				A4102A5F25A90B65002113D7 /* StringExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A4102A7825A9B1DA002113D7 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				A4102A7A25A9B1EF002113D7 /* Entity */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		A4102A7A25A9B1EF002113D7 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				A4102A7525A9B1D7002113D7 /* SearchMultiRequestEntity.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,7 +226,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4102A7625A9B1D7002113D7 /* SearchMultiRequestEntity.swift in Sources */,
+				A4102A6025A90B65002113D7 /* StringExtension.swift in Sources */,
 				A4102A2725A8FDD7002113D7 /* AppDelegate.swift in Sources */,
+				A4102A5D25A90B44002113D7 /* ResponseExtension.swift in Sources */,
+				A4102A5925A90669002113D7 /* DataRequestExtension.swift in Sources */,
+				A4102A7125A99DF2002113D7 /* Constants.swift in Sources */,
+				A4102A6A25A99D8A002113D7 /* Router.swift in Sources */,
+				A4102A6325A90E80002113D7 /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
