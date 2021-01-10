@@ -10,7 +10,7 @@ import Foundation
 struct Person: Codable, Equatable {
   
   let id: Int
-  let name: String
+  let name: String?
   let profilePath: String?
   let popularity: Double?
   let knownFor: [Movie]?

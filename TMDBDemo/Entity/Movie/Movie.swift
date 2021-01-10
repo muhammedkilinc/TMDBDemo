@@ -10,7 +10,7 @@ import Foundation
 struct Movie: Codable, Equatable {
   
   let id: Int
-  let title: String
+  let title: String?
   let genreIds: [Int]?
   let overview: String?
   let posterPath: String?

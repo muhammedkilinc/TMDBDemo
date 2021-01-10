@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContentsViewController" customModule="TMDBDemo" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="bmf-BE-PmC" id="r75-bp-e1I"/>
+                <outlet property="infoLabel" destination="zZ7-Ow-EXX" id="an2-1x-1rY"/>
                 <outlet property="searchBar" destination="X7k-2s-Man" id="1FU-ae-rGW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -21,12 +22,8 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="X7k-2s-Man">
-                    <rect key="frame" x="0.0" y="44" width="414" height="56"/>
-                    <textInputTraits key="textInputTraits"/>
-                </searchBar>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bmf-BE-PmC">
-                    <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                    <rect key="frame" x="0.0" y="100" width="414" height="796"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="snc-By-Jqe">
                         <size key="itemSize" width="128" height="128"/>
@@ -35,19 +32,32 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="X7k-2s-Man">
+                    <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start searching" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZ7-Ow-EXX">
+                    <rect key="frame" x="24" y="443" width="366" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="zZ7-Ow-EXX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="2SW-Xp-HvJ"/>
                 <constraint firstItem="bmf-BE-PmC" firstAttribute="top" secondItem="X7k-2s-Man" secondAttribute="bottom" id="EC6-Fn-r4E"/>
                 <constraint firstItem="X7k-2s-Man" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="F0C-cf-Gc9"/>
                 <constraint firstItem="bmf-BE-PmC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="OWt-iu-w8R"/>
                 <constraint firstItem="X7k-2s-Man" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="aBh-0a-apY"/>
                 <constraint firstItem="X7k-2s-Man" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="fbc-vQ-UOe"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bmf-BE-PmC" secondAttribute="trailing" id="p0c-L9-KOB"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bmf-BE-PmC" secondAttribute="bottom" id="pD2-SA-5bf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zZ7-Ow-EXX" secondAttribute="trailing" constant="24" id="pgk-On-w6W"/>
+                <constraint firstAttribute="bottom" secondItem="bmf-BE-PmC" secondAttribute="bottom" id="qvp-j8-Lpd"/>
+                <constraint firstItem="zZ7-Ow-EXX" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="yH6-nb-0cf"/>
             </constraints>
-            <point key="canvasLocation" x="28" y="104"/>
+            <point key="canvasLocation" x="27.536231884057973" y="103.79464285714285"/>
         </view>
     </objects>
     <resources>

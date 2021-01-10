@@ -11,19 +11,21 @@ import Alamofire
 enum EndpointRequestable: Requestable {
   
   case search(SearchMultiRequestEntity)
-  
+  case movieDetail(Int)
 }
 
 extension EndpointRequestable {
   var method: HTTPMethod {
     switch self {
     case .search: return .get
+    case .movieDetail: return .get
     }
   }
   
   var path: String {
     switch self {
     case .search: return "/search/multi"
+    case let .movieDetail(movieId): return "/movie/\(movieId)"
     }
   }
   
@@ -37,6 +39,8 @@ extension EndpointRequestable {
     switch self {
     case let .search(parameters):
       request = try! URLEncodedFormParameterEncoder().encode(parameters, into: request)
+    case .movieDetail(_):
+      break
     }
     
     return request

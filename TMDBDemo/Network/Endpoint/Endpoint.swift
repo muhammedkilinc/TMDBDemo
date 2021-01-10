@@ -10,6 +10,7 @@ import RxSwift
 
 protocol Endpoint {
   
-  func searchMulti(payload: SearchMultiRequestEntity) -> Observable<ListResponse<[List]>>
+  func searchMulti(payload: SearchMultiRequestEntity) -> Observable<ListResponse<[Content]>>
+  func movieDetail(movieId: Int) -> Observable<MovieDetail>
 
 }

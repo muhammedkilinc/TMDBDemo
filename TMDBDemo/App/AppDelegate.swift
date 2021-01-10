@@ -28,12 +28,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //      debugPrint(response)
 //    }
     
-    let source: Observable<ListResponse<[List]>> = EndpointImp().searchMulti(payload: SearchMultiRequestEntity(query: "John", page: 1))
-    
-    disposable = source
-      .subscribe { (response) in
-        debugPrint(response)
-      }
+//    let source: Observable<ListResponse<[List]>> = EndpointImp().searchMulti(payload: SearchMultiRequestEntity(query: "John", page: 1))
+//
+//    disposable = source
+//      .subscribe { (response) in
+//        debugPrint(response)
+//      }
     
     let window = UIWindow(frame: UIScreen.main.bounds)
     Application.shared.configureMainInterface(in: window)

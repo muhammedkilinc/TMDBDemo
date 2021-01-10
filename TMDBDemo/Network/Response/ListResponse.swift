@@ -12,9 +12,12 @@ private let encoder = JSONEncoder()
 struct ListResponse<T>: Codable, CustomStringConvertible where T: Codable {
   
   var data: T?
-  var currentPage: Int
-  var totalPages: Int
-  var totalResults: Int
+  var currentPage: Int?
+  var totalPages: Int?
+  var totalResults: Int?
+  var errors: [String]?
+  var statusMessage: String?
+  var statusCode: Int?
 
   var description: String {
     get {
@@ -33,5 +36,8 @@ struct ListResponse<T>: Codable, CustomStringConvertible where T: Codable {
     case currentPage = "page"
     case totalPages = "total_pages"
     case totalResults = "total_results"
+    case statusMessage = "status_message"
+    case statusCode = "status_code"
+    case errors
   }
 }

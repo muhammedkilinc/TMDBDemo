@@ -21,6 +21,8 @@ extension UITableViewCell: Reusable {}
 
 extension UICollectionViewCell: Reusable {}
 
+extension UICollectionReusableView: Reusable {}
+
 extension UIViewController: Reusable {}
 
 extension UITableView {
@@ -48,6 +50,23 @@ extension UICollectionView {
   
   func register<T>(type: T.Type) where T: UICollectionViewCell {
     register(UINib(nibName: T.reuseID, bundle: Bundle.main), forCellWithReuseIdentifier: T.reuseID)
+  }
+  
+  func registerSupplementaryView<T>(_: T.Type, ofKind kind: String)  where T: UICollectionReusableView {
+    register(T.self, forSupplementaryViewOfKind: kind, withReuseIdentifier: T.reuseID)
+  }
+  
+  func registerSupplementaryViewFromNib<T>(_: T.Type, ofKind kind: String) where T: UICollectionReusableView {
+    let bundle = Bundle(for: T.self)
+    let nib = UINib(nibName: T.reuseID, bundle: bundle)
+    register(nib, forSupplementaryViewOfKind: kind, withReuseIdentifier: T.reuseID)
+  }
+
+  func dequeueSupplementaryView<T>(ofKind kind: String, `for` indexPath: IndexPath) -> T where T: UICollectionReusableView {
+    guard let view = dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: T.reuseID, for: indexPath) as? T else {
+      fatalError("Could not dequeue supplementary view of kind: \(kind) with identifier: \(T.reuseID)")
+    }
+    return view
   }
 }
 
