@@ -37,6 +37,11 @@
 		A44D6C4725AB9CFB00DD7650 /* PersonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D6C4525AB9CFB00DD7650 /* PersonCollectionViewCell.swift */; };
 		A44D6C4825AB9CFB00DD7650 /* PersonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A44D6C4625AB9CFB00DD7650 /* PersonCollectionViewCell.xib */; };
 		A44D6C4D25AB9D1400DD7650 /* PersonCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D6C4C25AB9D1400DD7650 /* PersonCellViewModel.swift */; };
+		A44D6C5725ABA9CA00DD7650 /* PersonDetailNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D6C5625ABA9CA00DD7650 /* PersonDetailNavigator.swift */; };
+		A44D6C5C25ABA9E500DD7650 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D6C5A25ABA9E500DD7650 /* PersonDetailViewController.swift */; };
+		A44D6C5D25ABA9E500DD7650 /* PersonDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A44D6C5B25ABA9E500DD7650 /* PersonDetailViewController.xib */; };
+		A44D6C6025ABA9EF00DD7650 /* PersonDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D6C5F25ABA9EF00DD7650 /* PersonDetailViewModel.swift */; };
+		A44D6C6625ABAA9900DD7650 /* PersonDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44D6C6525ABAA9900DD7650 /* PersonDetail.swift */; };
 		A490BB9B25AA0286007A2E24 /* EndpointProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A490BB9A25AA0286007A2E24 /* EndpointProxy.swift */; };
 		A490BBA525AA03AB007A2E24 /* EndpointProxyImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A490BBA425AA03AB007A2E24 /* EndpointProxyImp.swift */; };
 		A490BBBD25AA0817007A2E24 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A490BBBC25AA0817007A2E24 /* ViewModelType.swift */; };
@@ -56,6 +61,7 @@
 		A490BC6625AB55A4007A2E24 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A490BC6525AB55A4007A2E24 /* MovieDetail.swift */; };
 		A490BC6925AB55F1007A2E24 /* MovieGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = A490BC6825AB55F1007A2E24 /* MovieGenre.swift */; };
 		A490BC6C25AB5640007A2E24 /* ObjectResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A490BC6B25AB5640007A2E24 /* ObjectResponse.swift */; };
+		A4FA999925ABB174007CEE42 /* Credit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FA999825ABB174007CEE42 /* Credit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +90,11 @@
 		A44D6C4525AB9CFB00DD7650 /* PersonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCollectionViewCell.swift; sourceTree = "<group>"; };
 		A44D6C4625AB9CFB00DD7650 /* PersonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCollectionViewCell.xib; sourceTree = "<group>"; };
 		A44D6C4C25AB9D1400DD7650 /* PersonCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCellViewModel.swift; sourceTree = "<group>"; };
+		A44D6C5625ABA9CA00DD7650 /* PersonDetailNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailNavigator.swift; sourceTree = "<group>"; };
+		A44D6C5A25ABA9E500DD7650 /* PersonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
+		A44D6C5B25ABA9E500DD7650 /* PersonDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonDetailViewController.xib; sourceTree = "<group>"; };
+		A44D6C5F25ABA9EF00DD7650 /* PersonDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewModel.swift; sourceTree = "<group>"; };
+		A44D6C6525ABAA9900DD7650 /* PersonDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetail.swift; sourceTree = "<group>"; };
 		A490BB9A25AA0286007A2E24 /* EndpointProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProxy.swift; sourceTree = "<group>"; };
 		A490BBA425AA03AB007A2E24 /* EndpointProxyImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProxyImp.swift; sourceTree = "<group>"; };
 		A490BBBC25AA0817007A2E24 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
@@ -103,6 +114,7 @@
 		A490BC6525AB55A4007A2E24 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		A490BC6825AB55F1007A2E24 /* MovieGenre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGenre.swift; sourceTree = "<group>"; };
 		A490BC6B25AB5640007A2E24 /* ObjectResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectResponse.swift; sourceTree = "<group>"; };
+		A4FA999825ABB174007CEE42 /* Credit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +274,17 @@
 			path = ContentHeader;
 			sourceTree = "<group>";
 		};
+		A44D6C6325ABAA3900DD7650 /* PersonDetail */ = {
+			isa = PBXGroup;
+			children = (
+				A44D6C5625ABA9CA00DD7650 /* PersonDetailNavigator.swift */,
+				A44D6C5F25ABA9EF00DD7650 /* PersonDetailViewModel.swift */,
+				A44D6C5A25ABA9E500DD7650 /* PersonDetailViewController.swift */,
+				A44D6C5B25ABA9E500DD7650 /* PersonDetailViewController.xib */,
+			);
+			path = PersonDetail;
+			sourceTree = "<group>";
+		};
 		A490BB9925AA0255007A2E24 /* Proxy */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				A490BC5725AB4278007A2E24 /* MovieDetail */,
+				A44D6C6325ABAA3900DD7650 /* PersonDetail */,
 				A490BBCD25AA132D007A2E24 /* Contents */,
 			);
 			path = Module;
@@ -336,7 +360,9 @@
 			children = (
 				A443D44E25A9BA6200E2CFD0 /* Movie.swift */,
 				A490BC6525AB55A4007A2E24 /* MovieDetail.swift */,
+				A44D6C6525ABAA9900DD7650 /* PersonDetail.swift */,
 				A490BC6825AB55F1007A2E24 /* MovieGenre.swift */,
+				A4FA999825ABB174007CEE42 /* Credit.swift */,
 			);
 			path = Movie;
 			sourceTree = "<group>";
@@ -413,6 +439,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A44D6C5D25ABA9E500DD7650 /* PersonDetailViewController.xib in Resources */,
 				A44D6C4325AB90F200DD7650 /* ContentHeaderReusableView.xib in Resources */,
 				A490BC5B25AB4293007A2E24 /* MovieDetailViewController.xib in Resources */,
 				A490BBE225AA13FB007A2E24 /* ContentCollectionViewCell.xib in Resources */,
@@ -437,6 +464,7 @@
 				A4102A7625A9B1D7002113D7 /* SearchMultiRequestEntity.swift in Sources */,
 				A4102A6025A90B65002113D7 /* StringExtension.swift in Sources */,
 				A4102A2725A8FDD7002113D7 /* AppDelegate.swift in Sources */,
+				A44D6C6625ABAA9900DD7650 /* PersonDetail.swift in Sources */,
 				A443D48E25A9BCD900E2CFD0 /* Content.swift in Sources */,
 				A443D49125A9BE8100E2CFD0 /* Person.swift in Sources */,
 				A44D6C4725AB9CFB00DD7650 /* PersonCollectionViewCell.swift in Sources */,
@@ -445,6 +473,7 @@
 				A490BBD625AA1347007A2E24 /* ContentsNavigator.swift in Sources */,
 				A490BC5F25AB42A5007A2E24 /* MovieDetailViewModel.swift in Sources */,
 				A490BBE525AA1420007A2E24 /* ContentCellViewModel.swift in Sources */,
+				A44D6C5725ABA9CA00DD7650 /* PersonDetailNavigator.swift in Sources */,
 				A4102A5925A90669002113D7 /* DataRequestExtension.swift in Sources */,
 				A490BBC325AA0879007A2E24 /* Reusable.swift in Sources */,
 				A490BBC725AA12C0007A2E24 /* Application.swift in Sources */,
@@ -452,14 +481,17 @@
 				A44D6C4D25AB9D1400DD7650 /* PersonCellViewModel.swift in Sources */,
 				A443D4C625A9FBBA00E2CFD0 /* EndpointImp.swift in Sources */,
 				A443D4C325A9FB5300E2CFD0 /* Endpoint.swift in Sources */,
+				A44D6C5C25ABA9E500DD7650 /* PersonDetailViewController.swift in Sources */,
 				A44D6C4225AB90F200DD7650 /* ContentHeaderReusableView.swift in Sources */,
 				A443D44F25A9BA6200E2CFD0 /* Movie.swift in Sources */,
+				A44D6C6025ABA9EF00DD7650 /* PersonDetailViewModel.swift in Sources */,
 				A490BC6C25AB5640007A2E24 /* ObjectResponse.swift in Sources */,
 				A443D4CD25A9FCB600E2CFD0 /* URLRequestExtension.swift in Sources */,
 				A490BC6925AB55F1007A2E24 /* MovieGenre.swift in Sources */,
 				A4102A6A25A99D8A002113D7 /* EndpointRequestable.swift in Sources */,
 				A490BBDB25AA135B007A2E24 /* ContentsViewController.swift in Sources */,
 				A490BBA525AA03AB007A2E24 /* EndpointProxyImp.swift in Sources */,
+				A4FA999925ABB174007CEE42 /* Credit.swift in Sources */,
 				A4102A6325A90E80002113D7 /* Requestable.swift in Sources */,
 				A490BC5A25AB4293007A2E24 /* MovieDetailViewController.swift in Sources */,
 				A490BC6625AB55A4007A2E24 /* MovieDetail.swift in Sources */,

@@ -13,6 +13,7 @@ protocol Requestable {
   var path: String { get }
   var headers: [String: String] { get }
   var method: HTTPMethod { get }
+  var extraParams: [String : Any]? { get }
 }
 
 extension Requestable {
@@ -50,9 +51,14 @@ extension Requestable {
     let params = additionalParams.map({ (key, value) -> URLQueryItem in
       return URLQueryItem(name: "\(key)", value: "\(value)")
     })
+    
+    let extraParameters = extraParams?.map({ (key, value) -> URLQueryItem in
+      return URLQueryItem(name: "\(key)", value: "\(value)")
+    })
 
     queryItems.append(contentsOf: params)
-    
+    queryItems.append(contentsOf: extraParameters ?? [])
+
     components.queryItems = queryItems
     return components
   }

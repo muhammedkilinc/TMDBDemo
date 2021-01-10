@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Content: Codable, Equatable {
+struct Content: Codable {
   
   let id: Int
   let title: String?
@@ -42,10 +42,10 @@ struct Content: Codable, Equatable {
   func toMovie() -> Movie {
     return Movie(id: id, title: title, genreIds: genreIds, overview: overview, posterPath: posterPath, backdropPath: backdropPath, releaseDate: releaseDate, voteAverage: voteAverage)
   }
-//
-//  func toPerson() -> Person {
-//    
-//  }
+
+  func toPerson() -> Person {
+    return Person(id: id, name: name, profilePath: profilePath, popularity: popularity, knownFor: knownFor)
+  }
   
 }
 

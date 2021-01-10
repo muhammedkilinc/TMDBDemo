@@ -36,8 +36,12 @@ class ContentsNavigatorImp: ContentsNavigator {
       let vc = MovieDetailViewController.loadFromNib()
       vc.viewModel = viewModel
       navigationController.pushViewController(vc, animated: true)
-    } else if item.mediaType == .tv {
-      // TODO:
+    } else if item.mediaType == .person {
+      let navigator = PersonDetailNavigatorImp(navigationController: navigationController)
+      let viewModel = PersonDetailViewModel(endpoint: endpoint, person: item.toPerson(), navigator: navigator)
+      let vc = PersonDetailViewController.loadFromNib()
+      vc.viewModel = viewModel
+      navigationController.pushViewController(vc, animated: true)
     } else {
       // TODO:
     }

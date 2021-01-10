@@ -21,6 +21,7 @@ struct MovieDetail: Codable {
   let adult: Bool?
   let runtime: Int?
   let popularity: Double?
+  let credits: Credit?
 
   private enum CodingKeys: String, CodingKey {
     case id
@@ -36,7 +37,7 @@ struct MovieDetail: Codable {
     case tagline
     case popularity
     case voteCount = "vote_count"
-
+    case credits
   }
 }
 

@@ -19,6 +19,11 @@ class EndpointImp: Endpoint {
     let method = EndpointRequestable.movieDetail(movieId)
     return method.asURLRequest().perform()
   }
+  
+  func personDetail(personId: Int) -> Observable<PersonDetail> {
+    let method = EndpointRequestable.personDetail(personId)
+    return method.asURLRequest().perform()
+  }
 }
 
 //
