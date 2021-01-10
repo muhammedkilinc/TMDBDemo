@@ -13,7 +13,8 @@ import RxSwift
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var disposable = Disposables.create()
-  
+  var window: UIWindow?
+
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
 //
@@ -34,12 +35,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         debugPrint(response)
       }
     
-    //input'u relaye at
-    //relayi outputla paylaş
-    //output data relay
-    //Output data relay tableview datasource'a bind et.
-    //
-
+    let window = UIWindow(frame: UIScreen.main.bounds)
+    Application.shared.configureMainInterface(in: window)
+    self.window = window
+    
+    self.window?.makeKeyAndVisible()
+    
     return true
   }
 
