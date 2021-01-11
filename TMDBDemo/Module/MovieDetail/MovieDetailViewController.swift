@@ -16,7 +16,8 @@ class MovieDetailViewController: UIViewController {
   @IBOutlet weak var titleLabel: UILabel!
   @IBOutlet weak var descriptionLabel: UILabel!
   @IBOutlet weak var dateLabel: UILabel!
-  
+  @IBOutlet weak var castCollectionView: UICollectionView!
+
   var viewModel: MovieDetailViewModel!
   private let disposeBag = DisposeBag()
   
@@ -25,7 +26,22 @@ class MovieDetailViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    setupCollectionView()
     bindViewModel()
+  }
+  
+  fileprivate func setupCollectionView() {
+    castCollectionView.register(type: CastCollectionViewCell.self)
+    castCollectionView.showsHorizontalScrollIndicator = false
+    
+    let w = Constants.Screen.CastCollectionCellWidth
+    let h = Constants.Screen.CastCollectionCellHeight
+
+    let layout = UICollectionViewFlowLayout()
+    layout.scrollDirection = .horizontal
+    layout.itemSize = CGSize(width: w, height: h)
+    layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)    
+    castCollectionView.collectionViewLayout = layout
   }
   
   private func bindViewModel() {
@@ -45,6 +61,11 @@ class MovieDetailViewController: UIViewController {
       .bind(to: postBinding)
       .disposed(by: disposeBag)
 
+    output.casts.bind(to: castCollectionView.rx.items(cellIdentifier: CastCollectionViewCell.reuseID, cellType: CastCollectionViewCell.self)) { row, viewModel, cell in
+      cell.bind(viewModel)
+    }.disposed(by: disposeBag)
+    
+    
   }
   
   var postBinding: Binder<MovieDetail> {

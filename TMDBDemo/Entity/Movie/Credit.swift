@@ -26,6 +26,17 @@ struct Cast: Codable {
   }
 }
 
+//TODO: Create ImageUrlProvider
+extension Cast {
+  var profileImageURL: URL? {
+    if let path = profilePath {
+      return URL(string: "\(Constants.API.ImageBaseURL)\(path)")
+    }
+    return nil
+  }
+}
+
+
 struct Crew: Codable {
   let department: String?
   let job: String?
@@ -37,5 +48,15 @@ struct Crew: Codable {
     case job
     case name
     case profilePath = "profile_path"
+  }
+}
+
+//TODO: Create ImageUrlProvider
+extension Crew {
+  var profileImageURL: URL? {
+    if let path = profilePath {
+      return URL(string: "\(Constants.API.ImageBaseURL)\(path)")
+    }
+    return nil
   }
 }
