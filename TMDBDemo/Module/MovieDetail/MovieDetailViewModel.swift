@@ -28,7 +28,13 @@ class MovieDetailViewModel: ViewModelType {
       return self.endpoint.movieDetail(movieId: self.movie.id)
     }
     
-    return Output(movie: source)
+    let casts = source.map { item -> [CastCellViewModel] in
+      return item.credits?.cast?.map({ cast -> CastCellViewModel in
+        return CastCellViewModel(with: cast)
+      }) ?? []
+    }
+    
+    return Output(movie: source, casts: casts)
   }
   
 }
@@ -40,5 +46,6 @@ extension MovieDetailViewModel {
   
   struct Output {
     let movie: Observable<MovieDetail>
+    let casts: Observable<[CastCellViewModel]>
   }
 }

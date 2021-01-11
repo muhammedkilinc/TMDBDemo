@@ -12,7 +12,7 @@ import RxSwift
 extension URLRequest {
   
   public func perform<T>() -> Observable<T> where T: Decodable {
-    return AF.request(self).seralize()
+    return AF.request(self).seralize().debug()
   }
   
 }

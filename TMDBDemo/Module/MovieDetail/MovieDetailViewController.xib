@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieDetailViewController" customModule="TMDBDemo" customModuleProvider="target">
             <connections>
+                <outlet property="castCollectionView" destination="4b4-Ae-Gso" id="Bz5-IO-LPm"/>
                 <outlet property="dateLabel" destination="3bU-dJ-zcy" id="Wa5-pO-Ztn"/>
                 <outlet property="descriptionLabel" destination="NSx-gu-lvj" id="5oc-uv-8Vy"/>
                 <outlet property="imageView" destination="WF1-DN-5JY" id="fS5-pt-Q4m"/>
@@ -30,7 +31,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="p8m-aE-eAh">
-                                    <rect key="frame" x="8" y="8" width="398" height="495.5"/>
+                                    <rect key="frame" x="8" y="8" width="398" height="680"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WF1-DN-5JY">
                                             <rect key="frame" x="0.0" y="0.0" width="398" height="398"/>
@@ -59,6 +60,30 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="NYU-eZ-aDL">
+                                            <rect key="frame" x="0.0" y="505.5" width="398" height="174.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Cast" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8u-zf-rpG" userLabel="movie Overview Label">
+                                                    <rect key="frame" x="0.0" y="0.0" width="398" height="20.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="4b4-Ae-Gso">
+                                                    <rect key="frame" x="0.0" y="24.5" width="398" height="150"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="150" id="qXW-bZ-N2Y"/>
+                                                    </constraints>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lYy-yV-zn8">
+                                                        <size key="itemSize" width="128" height="128"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                </collectionView>
+                                            </subviews>
+                                        </stackView>
                                     </subviews>
                                 </stackView>
                             </subviews>

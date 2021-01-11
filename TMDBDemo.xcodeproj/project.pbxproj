@@ -62,6 +62,9 @@
 		A490BC6925AB55F1007A2E24 /* MovieGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = A490BC6825AB55F1007A2E24 /* MovieGenre.swift */; };
 		A490BC6C25AB5640007A2E24 /* ObjectResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A490BC6B25AB5640007A2E24 /* ObjectResponse.swift */; };
 		A4FA999925ABB174007CEE42 /* Credit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FA999825ABB174007CEE42 /* Credit.swift */; };
+		A4FA999F25AC2344007CEE42 /* CastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FA999D25AC2344007CEE42 /* CastCollectionViewCell.swift */; };
+		A4FA99A025AC2344007CEE42 /* CastCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4FA999E25AC2344007CEE42 /* CastCollectionViewCell.xib */; };
+		A4FA99A325AC2399007CEE42 /* CastCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FA99A225AC2399007CEE42 /* CastCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +118,9 @@
 		A490BC6825AB55F1007A2E24 /* MovieGenre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGenre.swift; sourceTree = "<group>"; };
 		A490BC6B25AB5640007A2E24 /* ObjectResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectResponse.swift; sourceTree = "<group>"; };
 		A4FA999825ABB174007CEE42 /* Credit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credit.swift; sourceTree = "<group>"; };
+		A4FA999D25AC2344007CEE42 /* CastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastCollectionViewCell.swift; sourceTree = "<group>"; };
+		A4FA999E25AC2344007CEE42 /* CastCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CastCollectionViewCell.xib; sourceTree = "<group>"; };
+		A4FA99A225AC2399007CEE42 /* CastCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,6 +357,7 @@
 				A490BC5925AB4292007A2E24 /* MovieDetailViewController.xib */,
 				A490BC6125AB4309007A2E24 /* MovieDetailNavigator.swift */,
 				A490BC5E25AB42A5007A2E24 /* MovieDetailViewModel.swift */,
+				A4FA99A525AC239D007CEE42 /* Cell */,
 			);
 			path = MovieDetail;
 			sourceTree = "<group>";
@@ -365,6 +372,16 @@
 				A4FA999825ABB174007CEE42 /* Credit.swift */,
 			);
 			path = Movie;
+			sourceTree = "<group>";
+		};
+		A4FA99A525AC239D007CEE42 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A4FA999D25AC2344007CEE42 /* CastCollectionViewCell.swift */,
+				A4FA99A225AC2399007CEE42 /* CastCellViewModel.swift */,
+				A4FA999E25AC2344007CEE42 /* CastCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -443,6 +460,7 @@
 				A44D6C4325AB90F200DD7650 /* ContentHeaderReusableView.xib in Resources */,
 				A490BC5B25AB4293007A2E24 /* MovieDetailViewController.xib in Resources */,
 				A490BBE225AA13FB007A2E24 /* ContentCollectionViewCell.xib in Resources */,
+				A4FA99A025AC2344007CEE42 /* CastCollectionViewCell.xib in Resources */,
 				A490BBDC25AA135B007A2E24 /* ContentsViewController.xib in Resources */,
 				A4102A3325A8FDD9002113D7 /* LaunchScreen.storyboard in Resources */,
 				A44D6C4825AB9CFB00DD7650 /* PersonCollectionViewCell.xib in Resources */,
@@ -465,6 +483,8 @@
 				A4102A6025A90B65002113D7 /* StringExtension.swift in Sources */,
 				A4102A2725A8FDD7002113D7 /* AppDelegate.swift in Sources */,
 				A44D6C6625ABAA9900DD7650 /* PersonDetail.swift in Sources */,
+				A4FA999F25AC2344007CEE42 /* CastCollectionViewCell.swift in Sources */,
+				A4FA99A325AC2399007CEE42 /* CastCellViewModel.swift in Sources */,
 				A443D48E25A9BCD900E2CFD0 /* Content.swift in Sources */,
 				A443D49125A9BE8100E2CFD0 /* Person.swift in Sources */,
 				A44D6C4725AB9CFB00DD7650 /* PersonCollectionViewCell.swift in Sources */,
