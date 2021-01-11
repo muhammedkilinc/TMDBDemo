@@ -65,6 +65,8 @@
 		A4FA999F25AC2344007CEE42 /* CastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FA999D25AC2344007CEE42 /* CastCollectionViewCell.swift */; };
 		A4FA99A025AC2344007CEE42 /* CastCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4FA999E25AC2344007CEE42 /* CastCollectionViewCell.xib */; };
 		A4FA99A325AC2399007CEE42 /* CastCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FA99A225AC2399007CEE42 /* CastCellViewModel.swift */; };
+		A4FA99B925AC32A2007CEE42 /* Cast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FA99B825AC32A2007CEE42 /* Cast.swift */; };
+		A4FA99BC25AC32B5007CEE42 /* Crew.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FA99BB25AC32B5007CEE42 /* Crew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,6 +123,8 @@
 		A4FA999D25AC2344007CEE42 /* CastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastCollectionViewCell.swift; sourceTree = "<group>"; };
 		A4FA999E25AC2344007CEE42 /* CastCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CastCollectionViewCell.xib; sourceTree = "<group>"; };
 		A4FA99A225AC2399007CEE42 /* CastCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastCellViewModel.swift; sourceTree = "<group>"; };
+		A4FA99B825AC32A2007CEE42 /* Cast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cast.swift; sourceTree = "<group>"; };
+		A4FA99BB25AC32B5007CEE42 /* Crew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crew.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,9 +238,9 @@
 		A443D44D25A9B9B700E2CFD0 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				A443D49325A9BEA200E2CFD0 /* MediaType.swift */,
-				A443D49025A9BE8100E2CFD0 /* Person.swift */,
-				A443D48D25A9BCD900E2CFD0 /* Content.swift */,
+				A4FA99C325AC32CE007CEE42 /* Content */,
+				A4FA99C125AC32C7007CEE42 /* Person */,
+				A4FA99BE25AC32BA007CEE42 /* Credit */,
 				A490BC6E25AB6BF1007A2E24 /* Movie */,
 			);
 			path = Entity;
@@ -367,9 +371,7 @@
 			children = (
 				A443D44E25A9BA6200E2CFD0 /* Movie.swift */,
 				A490BC6525AB55A4007A2E24 /* MovieDetail.swift */,
-				A44D6C6525ABAA9900DD7650 /* PersonDetail.swift */,
 				A490BC6825AB55F1007A2E24 /* MovieGenre.swift */,
-				A4FA999825ABB174007CEE42 /* Credit.swift */,
 			);
 			path = Movie;
 			sourceTree = "<group>";
@@ -382,6 +384,34 @@
 				A4FA999E25AC2344007CEE42 /* CastCollectionViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		A4FA99BE25AC32BA007CEE42 /* Credit */ = {
+			isa = PBXGroup;
+			children = (
+				A4FA999825ABB174007CEE42 /* Credit.swift */,
+				A4FA99B825AC32A2007CEE42 /* Cast.swift */,
+				A4FA99BB25AC32B5007CEE42 /* Crew.swift */,
+			);
+			path = Credit;
+			sourceTree = "<group>";
+		};
+		A4FA99C125AC32C7007CEE42 /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				A443D49025A9BE8100E2CFD0 /* Person.swift */,
+				A44D6C6525ABAA9900DD7650 /* PersonDetail.swift */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		A4FA99C325AC32CE007CEE42 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				A443D49325A9BEA200E2CFD0 /* MediaType.swift */,
+				A443D48D25A9BCD900E2CFD0 /* Content.swift */,
+			);
+			path = Content;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -488,6 +518,8 @@
 				A443D48E25A9BCD900E2CFD0 /* Content.swift in Sources */,
 				A443D49125A9BE8100E2CFD0 /* Person.swift in Sources */,
 				A44D6C4725AB9CFB00DD7650 /* PersonCollectionViewCell.swift in Sources */,
+				A4FA99B925AC32A2007CEE42 /* Cast.swift in Sources */,
+				A4FA99BC25AC32B5007CEE42 /* Crew.swift in Sources */,
 				A490BBE125AA13FB007A2E24 /* ContentCollectionViewCell.swift in Sources */,
 				A4102A5D25A90B44002113D7 /* ResponseExtension.swift in Sources */,
 				A490BBD625AA1347007A2E24 /* ContentsNavigator.swift in Sources */,
